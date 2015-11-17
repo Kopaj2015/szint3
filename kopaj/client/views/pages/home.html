@@ -1,9 +1,29 @@
 <template name="home">
 
 
-	<div class="container">
-	<p>ez itt content</p>
-
+	<div class="container-fluid">
+		<h1>Események</h1>
+		<table class="table-striped">
+		<tr>
+			<th>Időpont</th>
+			<th>Esemény</th>
+			<th>1</th>
+			<th>X</th>
+			<th>2</th>
+			<th>Tét</th>
+		</tr>
+			{{#each events}}
+		      <tr>
+		      <td>{{> events.date}}</td>
+		      <td>{{> events.name}}</td>
+		      <td>{{> events.home}}</td>
+		      <td>{{> events.draw}}</td>
+		      <td>{{> events.away}}</td>
+		      <td><input type="number" class="form-control"></td>
+		      </tr>
+		    {{/each}}
+		</table>
+		
 	</div>
 
 
