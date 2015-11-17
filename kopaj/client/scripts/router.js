@@ -12,7 +12,7 @@ Router.configure({
  */
 Router.onBeforeAction(function () {
 
-//this.redirect('/');
+
 this.next();
 
   /*
