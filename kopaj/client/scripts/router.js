@@ -12,6 +12,9 @@ Router.configure({
  */
 Router.onBeforeAction(function () {
 
+//this.redirect('/');
+this.next();
+
   /*
   if (!Meteor.userId()) {
     this.redirect('chatRoom');
@@ -29,8 +32,8 @@ Router.onBeforeAction(function () {
  * Subscribes to the required publications.
  */
 Router.route('/', {
-  name:     'chatRoom',
-  template: 'chatRoom'
+  name:     'home',
+  template: 'home'
   ,/*subscriptions: function() {
     return [
       Meteor.subscribe('messages'),

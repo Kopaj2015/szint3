@@ -1,4 +1,4 @@
-Template.userDetails.events({
+Template.eventDetails.events({
   /**
    * Updates the users profile on field blur.
    * @param event Event object.
