@@ -3,7 +3,7 @@
 
 	<div class="container-fluid">
 		<h1>Események</h1>
-		<table class="table-striped">
+		<table class="table table-striped">
 		<tr>
 			<th>Időpont</th>
 			<th>Esemény</th>
@@ -13,14 +13,7 @@
 			<th>Tét</th>
 		</tr>
 			{{#each events}}
-		      <tr>
-		      <td>{{> events.date}}</td>
-		      <td>{{> events.name}}</td>
-		      <td>{{> events.home}}</td>
-		      <td>{{> events.draw}}</td>
-		      <td>{{> events.away}}</td>
-		      <td><input type="number" class="form-control"></td>
-		      </tr>
+		      {{> event}}
 		    {{/each}}
 		</table>
 		
