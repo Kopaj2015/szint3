@@ -46,7 +46,7 @@ Router.route('/', {
 /**
  * Router definition for the user details page.
  */
-Router.route('/event', {
-  name:     'eventDetails',
-  template: 'eventDetails'
+Router.route('/about', {
+  name:     'about',
+  template: 'about'
 });
