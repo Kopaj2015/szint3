@@ -4,17 +4,21 @@
 	<div class="container-fluid">
 		<h1>Események</h1>
 		<table class="table table-striped">
-		<tr>
-			<th>Időpont</th>
-			<th>Esemény</th>
-			<th>1</th>
-			<th>X</th>
-			<th>2</th>
-			<th>Tét</th>
-		</tr>
-			{{#each events}}
-		      {{> event}}
-		    {{/each}}
+			<thead>
+				<tr>
+					<th>Időpont</th>
+					<th>Esemény</th>
+					<th>1</th>
+					<th>X</th>
+					<th>2</th>
+					<th>Tét</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each events}}
+			      {{> event}}
+			    {{/each}}
+			</tbody>
 		</table>
 		
 	</div>

@@ -1,13 +1,17 @@
 <template name="event">
 
+	
+
 			<tr>
-			  <td>{{date}}</td>
-		      <td>{{name}}</td>
-		      <td>{{home}}</td>
-		      <td>{{draw}}</td>
-		      <td>{{away}}</td>
-		      
-		      <td><input type="number" class="form-control"></td>
+			  <td class="col-md-2">{{date}}</td>
+		      <td class="col-md-2">{{name}}</td>
+
+
+		      <td class="col-md-1"><input type="radio" name="bet" value="1">{{home}}</td>
+		      <td class="col-md-1"><input type="radio" name="bet" value="x">{{draw}}</td>
+		      <td class="col-md-1"><input type="radio" name="bet" value="2">{{away}}</td>
+		      <td><input type="number" value="0" class="form-control"></td>
+		      <td class="col-md-4"></td>
 		    </tr>
 
 </template>
